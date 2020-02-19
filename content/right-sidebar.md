@@ -1,5 +1,5 @@
 ---
-title: Right Sidebar
+title: Right XX Sidebar
 subtitle: Sed magna in pharetra ultricies dolor sit amet consequat adipiscing lorem.
 content_img:
   enabled: true
