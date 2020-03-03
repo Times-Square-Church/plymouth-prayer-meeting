@@ -199,11 +199,40 @@ $palette: (
 	@import 'layout/footer';
 	@import 'layout/navPanel';
 
+
+
 //Stackbit Banner
 	@import 'imports/banner';
 
+.videoframe {padding-top:56%;position:relative;width:100%;}
+.videoframe iframe {height:100%;left:0;position:absolute;top:0;width:100%;}
+.wrapper {clear:both;}
+.buttonorange {padding:10px 15px;background:#FFAC78;border-radius:15px;color:#fff;text-decoration:none;font-weight:bold;}
+
+/*home header*/
+#banner .content {background:none;padding:0 30px 50px;}
+#banner .innerleft {float:left;width:40%;}
+#banner .innerright {float:right;width:56%;}
+#banner .innerright h2 {text-align:center;}
+#banner .innerright h3 {text-align:center;color:#FDAC7D;font-size:60px;}
+
 /*countdown clock*/
-#clockdiv {font-family:sans-serif;color:#fff;display:block;font-weight:100;text-align:center;font-size:30px;margin:0 auto 150px;}
-#clockdiv > div {padding:10px;border-radius:3px;background:#00BF96;display:inline-block;}
-#clockdiv div > span {padding:15px;border-radius:3px;background:#00816A;display:inline-block;}
-#clockdiv .smalltext {padding-top:5px;font-size:16px;}
+#clockdiv {font-family:sans-serif;color:#fff;display:block;font-weight:100;text-align:center;font-size:30px;margin:0 auto 15px;}
+#clockdiv > div {padding:10px;border-radius:3px;display:inline-block;}
+#clockdiv div > span {padding:15px;border-radius:3px;display:inline-block;font-size:75px;font-weight:bold;}
+#clockdiv .smalltext {padding-top:5px;font-size:30px;}
+
+#videohp {}
+#videohp .innerleft {float:left;width:40%;}
+#videohp .innerright {float:right;width:56%;text-align:center;}
+
+#address {display:inline-block;background:#313B78;width:100%;color:#fff;margin:50px 0 0;border-bottom:#96DAED solid 12px;border-top:#96DAED solid 12px;}
+#address .inner {background:blue;display:block;}
+#address .innerleft {float:left;width:56%;}
+#address .innerright {float:right;width:40%;text-align:center;}
+#address strong, #address h2 {color:#fff;}
+
+#features {background-image:linear-gradient(to right, #6B55DB, #54C0E4);}
+#features h2 {text-align:center;color:#fff;}
+#features h3, #features p {color:#fff;}
+

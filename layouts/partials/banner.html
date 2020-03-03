@@ -1,18 +1,32 @@
 <!-- Banner -->
 <section id="banner">
     <div class="content">
-        <div class="inner">
-            <header>
-                <h2>{{ .Params.banner.title }}</h2>
-                {{ partial "markdownify-block" .Params.banner.subtitle }}
-            </header>
-            {{ if .Params.banner.actions }}
-                <ul class="actions">
-                    {{ range $action := .Params.banner.actions }}
-                        <li><a href="{{ if strings.HasPrefix $action.url "#" }}{{ $action.url }}{{ else }}{{ $action.url | relURL }}{{ end }}" class="button{{ if $action.is_primary }} primary{{ end }}{{ if $action.is_scrolly }} scrolly{{ end }}{{ if $action.is_huge }} huge{{ end }}">{{ $action.label }}</a></li>
-                    {{ end }}
-                </ul>
-            {{ end }}
+        <div class="innerleft">
+            <div class="videoframe">
+                <iframe src="https://www.youtube.com/embed/uzncoULNFuw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="innerright">
+            <div id="clockdiv">
+                <div>
+                    <span class="days"></span>
+                    <div class="smalltext">Days</div>
+                </div>
+                <div>
+                    <span class="hours"></span>
+                    <div class="smalltext">Hours</div>
+                </div>
+                <div>
+                    <span class="minutes"></span>
+                    <div class="smalltext">Minutes</div>
+                </div>
+                <div>
+                    <span class="seconds"></span>
+                    <div class="smalltext">Seconds</div>
+                </div>
+            </div>
+            <h2>Until Plymouth Prayer Meeting on</h2>
+            <h3>October 6, 2020 7PM</h3>
         </div>
     </div>
 </section>

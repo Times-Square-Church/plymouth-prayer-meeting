@@ -1,26 +1,40 @@
-<!-- One -->
-<section id="{{ .section.section_id }}" class="wrapper">
+<section id="videohp" class="wrapper">
+    <div class="inner">
+        <div class="innerleft">
+            <div class="videoframe">
+                <iframe src="https://www.youtube.com/embed/uzncoULNFuw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
 
-    <div id="clockdiv">
-        <div>
-            <span class="days"></span>
-            <div class="smalltext">Days</div>
         </div>
-        <div>
-            <span class="hours"></span>
-            <div class="smalltext">Hours</div>
-        </div>
-        <div>
-            <span class="minutes"></span>
-            <div class="smalltext">Minutes</div>
-        </div>
-        <div>
-            <span class="seconds"></span>
-            <div class="smalltext">Seconds</div>
+        <div class="innerright">
+            <h2>Video</h2>
+            <p>Gun Brethren of the Coast run a shot across the bow red ensign belaying pin mizzenmast hands Jolly Roger barkadeer cackle fruit. Yo-ho-ho coffer Sink me execution dock boatswain</p>
         </div>
     </div>
+</section>
 
+<section id="address" class="wrapper">
     <div class="inner">
+        <div class="innerleft">
+            <h2>Address</h2>
+            <strong>Plynouth Memorial Hall</strong>
+            <p>83 Court Street,<br/>
+            Plymouth, MA 02360</p>
+            <a href="https://goo.gl/maps/JPsUwS2sLEnE53LWA" target="blank" class="buttonorange">Get Directions</a>
+        </div>
+        <div class="innerright">
+            <div class="videoframe">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11867.572236809!2d-70.6689481!3d41.959632!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x48dd8a147f073086!2sPlymouth%20Memorial%20Hall!5e0!3m2!1sen!2sus!4v1583272940747!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- One -->
+<section id="{{ .section.section_id }}" class="wrapper">
+    <div class="inner">
+        <h2>Why?</h2>
         <ul class="features">
             {{ range $feature := .section.features }}
                 <li>
