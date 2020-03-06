@@ -232,7 +232,9 @@ $palette: (
 #address .innerright {float:right;width:40%;text-align:center;}
 #address strong, #address h2 {color:#fff;}
 
-#features {background-image:linear-gradient(to right, #6B55DB, #54C0E4);}
+#features {background-image:linear-gradient(to right, #6B55DB, #54C0E4);margin-top:-7px;}
 #features h2 {text-align:center;color:#fff;}
 #features h3, #features p {color:#fff;}
-
+#features h3 {text-align:center;font-size:18px;}
+#features li {display:flex;}
+#features p {margin:auto;}
