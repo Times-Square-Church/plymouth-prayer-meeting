@@ -268,13 +268,12 @@ html {font-size:4vw}
 	@media screen and (max-width: 736px) {
 #header {height:6em !important;}
 .navPanelToggle {top:38px !important;margin-right:9px;}
-#header nav {top:89px;}
+#header nav {display:none;}
 
 #header.alt {height:3em !important;}
-#header.alt nav {display: none;top:57px;}
 #header.alt .navPanelToggle {display:block;position:relative !important;float:right;clear:both;margin-right:9px;top:0 !important;}
 
-#main {margin-top:80px;}
+#main {margin-top:43px;}
 
 #banner {height:58em;}
 #banner .innerleft, #banner .innerright, #videohp .innerleft, #videohp .innerright {width:100%;}
