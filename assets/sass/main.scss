@@ -208,21 +208,30 @@ $palette: (
 .videoframe iframe {height:100%;left:0;position:absolute;top:0;width:100%;}
 .wrapper {clear:both;}
 .buttonorange {padding:10px 15px;background:#FFAC78;border-radius:15px;color:#fff;text-decoration:none;font-weight:bold;}
+html {font-size:4vw}
+
+/*header*/
+#header {height:6.5em;}
+#tsclogo {float:right;margin-right:1.5em;}
+#header nav {top:57px;margin:0;width:100%;display:inline-block;padding:0 0 0 8px;height:65px;background:#fff;}
+
+#header.alt nav {margin-right:0;top:77px;padding-left:23px;}
+#header.alt nav ul {margin-top:-7px;}
+#header nav ul li a {color:#2F373F;}
 
 /*home header*/
 #banner .content {background:none;padding:0 30px 50px;}
 #banner .innerleft {float:left;width:40%;}
 #banner .innerright {float:right;width:56%;}
-#banner .innerright h2 {text-align:center;}
-#banner .innerright h3 {text-align:center;color:#FDAC7D;font-size:60px;}
+#banner .innerright h2 {text-align:center;font-size:2vw;}
+#banner .innerright h3 {text-align:center;color:#FDAC7D;font-size:3vw;}
 
 /*countdown clock*/
-#clockdiv {font-family:sans-serif;color:#fff;display:block;font-weight:100;text-align:center;font-size:30px;margin:0 auto 15px;}
+#clockdiv {font-family:sans-serif;color:#fff;display:block;font-weight:100;text-align:center;margin:0 auto 15px;}
 #clockdiv > div {padding:10px;border-radius:3px;display:inline-block;}
-#clockdiv div > span {padding:15px;border-radius:3px;display:inline-block;font-size:75px;font-weight:bold;}
-#clockdiv .smalltext {padding-top:5px;font-size:30px;}
+#clockdiv div > span {border-radius:3px;display:inline-block;font-size:3.5vw;font-weight:bold;}
+#clockdiv .smalltext {padding-top:5px;font-size:1.5vw}
 
-#videohp {}
 #videohp .innerleft {float:left;width:40%;}
 #videohp .innerright {float:right;width:56%;text-align:center;}
 
@@ -238,3 +247,43 @@ $palette: (
 #features h3 {text-align:center;font-size:18px;}
 #features li {display:flex;}
 #features p {margin:auto;}
+
+
+	@media screen and (min-width:1280px) {
+#banner .innerright h2 {font-size:25px;}
+#banner .innerright h3 {font-size:59px;}
+
+#clockdiv {font-size:30px;}
+#clockdiv div > span {font-size:75px;}
+#clockdiv .smalltext {font-size:30px;}
+	}
+
+	@media screen and (max-width: 1100px) {
+#banner {height:28em;}
+	}
+
+	@media screen and (max-width: 900px) {
+#banner {height:27em;}
+	}
+
+	@media screen and (max-width: 736px) {
+#banner {height:63em;}
+#banner .innerleft, #banner .innerright, #videohp .innerleft, #videohp .innerright {width:100%;}
+#banner .innerright, #videohp .innerright {padding-top:22px;}
+#banner .innerright h2 {font-size:4vw;}
+#banner .innerright h3 {font-size:7vw;}
+#clockdiv div > span {font-size:6.5vw;}
+#clockdiv .smalltext {font-size:4.5vw}
+
+#address {padding-top:25px;padding-bottom:25px;}
+
+#features {padding-left:10px;padding-right:10px;}
+ul.features li h3 {min-width:30%;}
+#features h3 {padding:0;}
+#features h3 span {clear:both;display:block;}
+#features img {width:70%;} 
+	}
+
+	@media screen and (max-width: 600px) {
+#banner {height:54em;}
+	}

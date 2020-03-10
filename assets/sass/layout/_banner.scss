@@ -56,13 +56,9 @@
 		}
 
 		@include breakpoint('<=medium') {
-			@include orientation(landscape) {
-				height: 30em;
-			}
+			
 
-			@include orientation(portrait) {
-				height: 50em;
-			}
+			
 
 			.content {
 				> .inner {
@@ -82,13 +78,7 @@
 		}
 
 		@include breakpoint('<=small') {
-			@include orientation(landscape) {
-				height: 25em;
-			}
-
-			@include orientation(portrait) {
-				height: 30em;
-			}
+	
 
 			.content {
 				@include padding(2.5em, 2em);

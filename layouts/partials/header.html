@@ -1,6 +1,7 @@
 <!-- Header -->
 <header id="header" {{ if eq .Params.layout .Site.Params.landing_template }}class="alt"{{ end }}>
     <h1 id="logo"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
+    <strong id="tsclogo"><a href="https://tsc.nyc"><img src="https://tsc.nyc/beta_images/mc_tsc_logo_wt.gif" alt="Times Square Church" scale="0"></a></strong>
     <nav id="nav">
         {{ $menu := .Site.Menus.main }}
         {{ $include_dict := dict "menu" $menu "page" . }}
