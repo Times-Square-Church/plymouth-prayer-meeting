@@ -248,7 +248,6 @@ html {font-size:4vw}
 #features li {display:flex;}
 #features p {margin:auto;}
 
-
 	@media screen and (min-width:1280px) {
 #banner .innerright h2 {font-size:25px;}
 #banner .innerright h3 {font-size:59px;}
@@ -267,7 +266,17 @@ html {font-size:4vw}
 	}
 
 	@media screen and (max-width: 736px) {
-#banner {height:63em;}
+#header {height:6em !important;}
+.navPanelToggle {top:38px !important;margin-right:9px;}
+#header nav {top:89px;}
+
+#header.alt {height:3em !important;}
+#header.alt nav {display: none;top:57px;}
+#header.alt .navPanelToggle {display:block;position:relative !important;float:right;clear:both;margin-right:9px;top:0 !important;}
+
+#main {margin-top:80px;}
+
+#banner {height:58em;}
 #banner .innerleft, #banner .innerright, #videohp .innerleft, #videohp .innerright {width:100%;}
 #banner .innerright, #videohp .innerright {padding-top:22px;}
 #banner .innerright h2 {font-size:4vw;}
@@ -285,5 +294,5 @@ ul.features li h3 {min-width:30%;}
 	}
 
 	@media screen and (max-width: 600px) {
-#banner {height:54em;}
+#banner {height:50em;}
 	}
