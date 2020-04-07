@@ -64,6 +64,9 @@ menu:
       url: '#'
       weight: 4
       parent: submenu
+    - identifier: main
+      name: Map Test
+      url: /map-test/
   footer:
     - identifier: normal8
       name: Made with Stackbit
